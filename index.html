@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Raushan patel </h1>
+            <p>Educational Portfolio</p>
+        </div>
+    </header>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Information Tecnology </h3>
+                <p> INSTITUTE OF ENGINEERING AND MANAGEMENT, Graduated july 2027 </p>
+                <p>GPA: 8.5</p>
+            </div>
+            <!-- Add more education items as needed -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Node.js & Express.js</li>
+                <li>SQL & NoSQL Databases</li>
+                <li>Responsive Web Design</li>
+                <li>Version Control (Git)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Developed a personal portfolio website using HTML, CSS, and JavaScript.</p>
+                <button class="btn" onclick="openModal('project1')">Details</button>
+            </div>
+            <div class="project">
+                <h3>E-commerce Site</h3>
+                <p>Created a responsive e-commerce website with payment integration.</p>
+                <button class="btn" onclick="openModal('project2')">Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="project1" class="modal-project">
+                <h2>Portfolio Website</h2>
+                <p>Details: This project showcases my skills in front-end web development.</p>
+                <p>Skills used: HTML, CSS, JavaScript</p>
+            </div>
+            <div id="project2" class="modal-project">
+                <h2>E-commerce Site</h2>
+                <p>Details: A fully functional e-commerce site built with modern technologies.</p>
+                <p>Skills used: React.js, Node.js, Express.js</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: raushanpatel806@gmail.com</p>
+            <p>Phone: 8252342758</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
